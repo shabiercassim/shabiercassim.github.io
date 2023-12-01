@@ -13,3 +13,8 @@
         // Example: Log the values to the console
         console.log('Value of "key" parameter:', keyValue);
         console.log('Value of "value" parameter:', valueValue);
+        // Pushing a single piece of data
+        dataLayer.push({
+            'key1': keyValue,
+            'value': valueValue
+        });
