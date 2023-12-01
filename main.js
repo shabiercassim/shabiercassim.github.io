@@ -13,9 +13,9 @@
         // Example: Log the values to the console
         console.log('Value of "key" parameter:', keyValue);
         console.log('Value of "value" parameter:', valueValue);
-        
+
         dataLayer.push({
-            'event': 'customEvent',
-            'customVariable': 'someValue'
+            'event': 'dlCustomEvent',
+            keyValue: valueValue
         });
       
