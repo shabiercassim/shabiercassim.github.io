@@ -16,6 +16,7 @@
 
         dataLayer.push({
             'event': 'customEvent',
-            keyValue: valueValue
+            'keyValue': keyValue ,
+            'valueValue': valueValue
         });
       
