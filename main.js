@@ -14,7 +14,7 @@
         console.log('Value of "key" parameter:', keyValue);
         console.log('Value of "value" parameter:', valueValue);
 
-        dataLayer.push({
+        window.dataLayer.push({
             'event': 'customEvent',
             'keyValue': keyValue ,
             'valueValue': valueValue
