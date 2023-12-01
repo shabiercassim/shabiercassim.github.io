@@ -37,15 +37,38 @@
         <!-- End Google Tag Manager (noscript) -->
         <h1>Hello World</h1>
         <p>I'm hosted with shabier test Pages.</p>
-        <script>
-            // Accessing GTM Data Layer Variable
-            var customVariableValue = window.dataLayer[0].customVariable;
-    
-            // Using the value in your page
-            console.log('Value of customVariable:', customVariableValue);
-            
-            // You can now use 'customVariableValue' as needed in your HTML/JavaScript code.
-        </script>
+
         <button class="button button1">Get API</button>
+        <!-- Button to trigger API request -->
+    <button id="apiRequestButton">Send API Request</button>
+
+    <!-- Display area for API response -->
+    <pre id="apiResponse"></pre>
+
+    <script>
+        // Function to handle the API request
+        function sendApiRequest() {
+            // API endpoint URL
+            var apiUrl = 'http://httpbin.org/get?key=hello&value=world';
+
+            // Sending a GET request using Fetch API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Log the API response to the console
+                    console.log('API Response:', data);
+
+                    // Display the API response in the HTML
+                    document.getElementById('apiResponse').innerText = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('apiResponse').innerText = 'Error occurred while fetching the API.';
+                });
+        }
+
+        // Attach click event listener to the button
+        document.getElementById('apiRequestButton').addEventListener('click', sendApiRequest);
+    </script>
     </body>
 </html>
