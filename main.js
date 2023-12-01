@@ -1,3 +1,3 @@
-console.log("Hello, My World!");
+//console.log("Hello, My World!");
 const myUrl2 = new URL(window.location.toLocaleString());
-console.log(myUrl2);
+console.log(myUrl2.toString);
