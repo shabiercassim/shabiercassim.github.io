@@ -37,6 +37,15 @@
         <!-- End Google Tag Manager (noscript) -->
         <h1>Hello World</h1>
         <p>I'm hosted with shabier test Pages.</p>
+        <script>
+            // Accessing GTM Data Layer Variable
+            var customVariableValue = window.dataLayer[0].customVariable;
+    
+            // Using the value in your page
+            console.log('Value of customVariable:', customVariableValue);
+            
+            // You can now use 'customVariableValue' as needed in your HTML/JavaScript code.
+        </script>
         <button class="button button1">Get API</button>
     </body>
 </html>
