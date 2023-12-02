@@ -39,5 +39,13 @@
 
         <!-- Display area for API response -->
         <pre id="apiResponse"></pre>
+        <script>
+            var dataLayer = window.dataLayer || [];
+            var statusInd = dataLayer.find(function(e) {
+            return e.event === 'gtm.js' && e['gtm.uniqueEventId'] === '1';
+            })['status'];
+            // Display the API response in the HTML
+            document.getElementById('apiResponse').innerText = JSON.stringify(statusInd, null, 2);
+        </script>
     </body>
 </html>
