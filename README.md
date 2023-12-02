@@ -29,6 +29,8 @@ The shabiercassim.github.io website is for purposes of evaluating the Implementa
 ## Demo
 
 You can check out the live demo of the website [here](https://shabiercassim.github.io?key=hello&value=world).
+to access the console right click on the website and click the inspect option.
+click the button to send the get API request.
 
 ## Getting Started
 
