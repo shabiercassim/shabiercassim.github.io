@@ -41,9 +41,13 @@
         <pre id="apiResponse"></pre>
         <script>
             // Listen for the custom event triggered by GTM
+            document.getElementById('apiResponse').innerText = 'waiting...';
             document.addEventListener('successEvent', function(event) {
             // Access the variable value
             var variableValue = 'success';
+
+            // Display the API response in the HTML
+            document.getElementById('apiResponse').innerText = JSON.stringify(variableValue, null, 2);
 
             // Use the variable value as needed
             console.log('GTM Variable Value:', variableValue);
