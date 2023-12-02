@@ -12,63 +12,26 @@
         <title>Google tag manager test</title>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        
+        <!-- External js file to get query params and push to datalayer-->
         <script src="main.js">
         </script>
-        <style>
-            .button {
-              border: none;
-              color: white;
-              padding: 12px 28px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              margin: 4px 2px;
-              cursor: pointer;
-            }
-            
-            .button1 {background-color: #04AA6D;} /* Green */
-            </style>
+
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHFWZQW2"
         ></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <h1>Hello World</h1>
-        <p>I'm hosted with shabier test Pages.</p>
 
-        <button class="button button1">Get API</button>
+        <!-- Adding text to webpage-->
+        <h1>Technical Manager Assessment</h1>
+        <p>Implementation of GTM and API </p>
+ 
         <!-- Button to trigger API request -->
-    <button id="apiRequestButton">Send API Request</button>
+        <button id="apiRequestButton">Send API Request</button>
 
-    <!-- Display area for API response -->
-    <pre id="apiResponse"></pre>
-<!--
-    <script>
-        // Function to handle the API request
-        function sendApiRequest() {
-            // API endpoint URL
-            var apiUrl = 'https://httpbin.org/get?key=hello&value=world';
-
-            // Sending a GET request using Fetch API
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    // Log the API response to the console
-                    console.log('API Response:', data);
-
-                    // Display the API response in the HTML
-                    document.getElementById('apiResponse').innerText = JSON.stringify(data, null, 2);
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    document.getElementById('apiResponse').innerText = 'Error occurred while fetching the API.';
-                });
-        }
-
-        // Attach click event listener to the button
-        document.getElementById('apiRequestButton').addEventListener('click', sendApiRequest);
-    </script> -->
+        <!-- Display area for API response -->
+        <pre id="apiResponse"></pre>
     </body>
 </html>
