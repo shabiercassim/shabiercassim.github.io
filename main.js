@@ -16,7 +16,7 @@
 
         window.datalayer = window.dataLayer || [];
         window.dataLayer.push({
-            'event': 'customEvent',
+            'event': 'keyValuePairEvent',
             'keyValue': keyValue ,
             'valueValue': valueValue
         });
